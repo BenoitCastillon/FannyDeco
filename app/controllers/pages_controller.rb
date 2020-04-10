@@ -2,6 +2,9 @@ class PagesController < ApplicationController
   def home
   end
 
+  def approche
+  end
+
   def prestations
   end
 
