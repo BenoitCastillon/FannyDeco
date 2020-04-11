@@ -2,10 +2,9 @@
 <p>Find me in app/views/realisations/index.html.erb</p>
 
 <div class="container">
-
-
+<%= link_to 'Créer une nouvelle réalisation', new_realisation_path %>
 <% @realisations.each do |realisation| %>
-  <h1><%= realisation.name %></h1>
+  <h1><%= link_to realisation.name, realisation_path(realisation) %></h1>
   <h4><%= realisation.category %></h4>
   <p><%= realisation.description %></p>
 <% end %>

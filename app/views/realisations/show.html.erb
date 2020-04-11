@@ -1,8 +1,9 @@
 <h1>Realisations#show</h1>
 <p>Find me in app/views/realisations/show.html.erb</p>
 
-<div class="container">
-  <h1><%= @realisation.name %></h1>
-  <h4><%= @realisation.category %></h4>
-  <p><%= @realisation.description %></p>
-</div>
+<h1><%= @realisation.name %></h1>
+<h4><%= @realisation.category %></h4>
+<p><%= @realisation.description %></p>
+<%= link_to 'Retour à la liste', realisations_path %>
+<%= link_to 'Modifier', edit_realisation_path(@realisation) %>
+<%= link_to 'Supprimer', realisation_path(@realisation), method: :delete, data: { confirm: 'Es-tu bien sure de toi ma puff?'} %>

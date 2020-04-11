@@ -1,11 +1,6 @@
 Rails.application.routes.draw do
 
-  get 'realisations/index'
-  get 'realisations/show'
-  get 'realisations/new'
-  get 'realisations/create'
-  get 'realisations/edit'
-  get 'realisations/update'
+
   get 'realisations/destroy'
   resources :realisations do
   end
