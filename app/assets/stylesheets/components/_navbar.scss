@@ -1,67 +1,8 @@
-.avatar_banner {
-  border-radius: 50%;
-  // margin-left : 10px;
-}
-
-.title {
-  color: #08415C;
-  font-family: 'Lato';
-  font-size: 24px;
-  font-weight: 500;
-  font-style: italic;
-}
-
-.navbar {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+.navbar-lewagon {
+  justify-content: space-between;
   background: white;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 20px 40px;
-
-}
-
-li, a {
-  font-family: "Lato";
-  font-size: 16px;
-  // font-weight: lighter;
-  color: #08415C;
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
-}
-
-
-.left_nav li {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 0;
-}
-
-.nav_links li {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 0;
-}
-
-
-.nav_links li a {
-  // transition: all 0.2s ease 0s;
-  font-weight: 390;
-}
-
-.nav_links li a:hover {
-  font-weight: 600;
-}
-
-
-
-.nav_link {
-  padding: 0px;
+  padding-top: 16px;
+  position: fixed-top;
 }
 
 .navbar_home {
@@ -70,3 +11,55 @@ ul {
   background: transparent;
   box-shadow: none;
 }
+
+.navbar-lewagon .navbar-collapse {
+  flex-grow: 0;
+  margin-right: 70px;
+}
+
+.navbar-lewagon .navbar-brand img {
+  width: 60px;
+  margin-left: 120px;
+}
+
+
+.avatar_banner {
+  border-radius: 50%;
+  // margin-left : 10px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: $blue_hat;
+  font-family: "Lato";
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 390;
+}
+
+.navbar-light .navbar-nav .show >
+.nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
+  color: $blue_hat;
+  font-family: "Lato";
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 550;
+}
+
+
+// .title {
+//   color: $blue_hat;
+//   font-family: 'Lato';
+//   font-size: 24px;
+//   font-weight: 500;
+//   font-style: italic;
+// }
+
+// .nav_links li a {
+//   // transition: all 0.2s ease 0s;
+//   font-weight: 390;
+// }
+
+// .nav_links li a:hover {
+//   font-weight: 600;
+// }
+

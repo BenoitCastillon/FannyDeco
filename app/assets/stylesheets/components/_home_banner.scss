@@ -1,30 +1,29 @@
+
 .banner {
   height: 100vh;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   background-image: image_url("banner_image_home.jpg");
   background-size: cover;
   // background-position: center;
 }
 
-.banner_content {
-  background:white;
-  padding: 32px;
-  border-radius: 4px;
-  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+.banner-content {
+  margin-bottom: 675px;
+  margin-left: 50px;
 }
-  h1 {
-    color: #08415C;
-    font-size: 32px;
-    // font-weight: lighter;
+
+.banner h1 {
+    color: $blue_hat;
+    font-size: 36px;
+    font-weight: 300;
   }
 
-  p {
-    color: #FFE81E;
-    font-size: 32px;
-    margin-bottom: 550px;
-    // font-weight: lighter;
+.banner p {
+    color: $yellow;
+    font-size: 36px;
+    margin-bottom: 400px;
+    font-weight: 500;
   }
 
 // #0B6E8E
