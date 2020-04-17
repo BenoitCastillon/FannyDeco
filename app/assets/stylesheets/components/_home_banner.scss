@@ -1,28 +1,27 @@
-
 .banner {
-  height: 100vh;
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  height: 100vh;
   background-image: image_url("banner_image_home.jpg");
   background-size: cover;
   // background-position: center;
 }
 
 .banner-content {
-  margin-bottom: 675px;
-  margin-left: 50px;
+  height: 50vh;
+  padding-top : 50px;
+  // flex: 100%;
 }
 
-.banner h1 {
+.banner-content h1 {
     color: $blue_hat;
     font-size: 36px;
     font-weight: 300;
   }
 
-.banner p {
+.banner-content p {
     color: $yellow;
     font-size: 36px;
-    margin-bottom: 400px;
     font-weight: 500;
   }
 
@@ -32,3 +31,17 @@
 
 // DARK IMPERIAL BLUE : #08415C
 // Le Yellow : #FFE81E
+
+@media(max-width: 768px) {
+
+  // .banner-content {
+  //   padding-top: 30px;
+  // }
+
+  .banner-content h1 {
+    font-size: 28px;
+  }
+  .banner-content p {
+    font-size: 28px;
+  }
+}

@@ -1,21 +1,39 @@
-.footer {
-  height: 4rem;
-  color: $blue_hat;
-  position: fixed-bottom;
+.footer-cards {
+  display: flex;
+  flex-wrap: wrap;
+  height: 8vh;
+
+  // height: 80px;
+  // font-size: 16px;
+  // color: $blue_hat;
+  // padding: 60px;
 }
 
-.footer-links a {
+.card-copyright {
+  flex: 50%;
   color: $blue_hat;
-  font-weight: 390;
+  // align-items: center;
+  // justify-content: center;
+}
+
+.card-media-links {
+  flex: 50%;
+  // align-items: center;
+  // justify-content: center;
+}
+
+.card-media-links a {
   font-size: 24px;
-  padding: 0px 10px;
+  color: $blue_hat;
 }
 
-.footer-links a:hover {
-  font-weight: 600;
-}
+@media(max-width: 768px) {
+  .footer-cards {
+    font-size: 14px;
+    flex-direction: column;
 
-.footer .fa-heart {
-  color: $yellow;
-  border: red;
+  }
+  .card-media-links a {
+    font-size: 14px;
+  }
 }

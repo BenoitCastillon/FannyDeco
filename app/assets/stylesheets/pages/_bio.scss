@@ -1,3 +1,39 @@
+.banner2 {
+  padding-top: 90px;
+  position: center;
+}
+
+.bannerpicture {
+  height: 20vh;
+  width: 100vw;
+  object-fit: cover;
+}
+
 .container {
-  padding-top: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 60px;
+}
+
+.photo {
+  flex: 30%;
+  padding: 10px;
+}
+
+.text {
+  flex: 70%;
+  padding: 10px;
+}
+
+/* Vos règles CSS pour les mobiles ici */
+
+@media(max-width: 768px) {
+  .container {
+    font-size: 16px;
+  }
+  .container .photo .rounded-circle {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 30px;
+  }
 }

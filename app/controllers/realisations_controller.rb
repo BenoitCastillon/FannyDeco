@@ -1,7 +1,6 @@
 class RealisationsController < ApplicationController
   before_action :find_realisation, only: [:show, :edit, :update, :destroy]
 
-
   # GET /realisations
   def index
     @realisations = Realisation.all
@@ -55,6 +54,6 @@ class RealisationsController < ApplicationController
 
   # Only allow a trusted parameter "white list" approach
   def realisation_params
-    params.require(:realisation).permit(:name, :category, :description)
+    params.require(:realisation).permit(:name, :category, :description, :photo)
   end
 end

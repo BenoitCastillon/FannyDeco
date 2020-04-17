@@ -13,7 +13,7 @@ puts 'database is clean'
 
 puts'Creating realisations'
 
-100.times do
+20.times do
   Realisation.create(
     name: Faker::Address.community,
     category: Faker::Construction.material,

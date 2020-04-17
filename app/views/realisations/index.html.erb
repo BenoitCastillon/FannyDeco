@@ -1,15 +1,22 @@
-<h1>Realisations#index</h1>
-<p>Find me in app/views/realisations/index.html.erb</p>
-
-<div class="container">
-<%= link_to 'Créer une nouvelle réalisation', new_realisation_path %>
-<% @realisations.each do |realisation| %>
-  <h1><%= link_to realisation.name, realisation_path(realisation) %></h1>
-  <h4><%= realisation.category %></h4>
-  <p><%= realisation.description %></p>
-<% end %>
-
+<div class="banner2" w-100 >
+  <%= image_tag "greenlamp3.jpg", class: "bannerpicture" %>
 </div>
 
+
+<%= link_to 'Créer une nouvelle réalisation', new_realisation_path %>
+
+<div class="container d-flex justify-content-center">
+  <div class="intro text-center mb-5">
+    <p>Vous trouverez ci-dessous une sélection de projets <br>
+    sur lesquels j'ai eu plaisir de travailler</p>
+  </div>
+
+  <div class="cards">
+    <% @realisations.each do |realisation| %>
+    <div class="card"><%= realisation.name %></div>
+    <%= realisation.photo %>
+    <% end %>
+  </div>
+</div>
 
 
