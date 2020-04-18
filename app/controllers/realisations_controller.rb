@@ -54,6 +54,6 @@ class RealisationsController < ApplicationController
 
   # Only allow a trusted parameter "white list" approach
   def realisation_params
-    params.require(:realisation).permit(:name, :category, :description, :photo)
+    params.require(:realisation).permit(:name, :category, :description, :photo )
   end
 end
