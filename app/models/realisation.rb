@@ -1,5 +1,5 @@
 class Realisation < ApplicationRecord
-  has_one_attached :photo
+  has_many_attached :photos
   validates :name, presence: true
   validates :category, presence: true
   validates :description, presence: true

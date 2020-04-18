@@ -11,10 +11,11 @@
     sur lesquels j'ai eu plaisir de travailler</p>
   </div>
 
-  <div class="cards">
+
+
+  <div class="cards text-center pb-5">
     <% @realisations.each do |realisation| %>
     <div class="card"><%= realisation.name %></div>
-    <%= realisation.photo %>
     <% end %>
   </div>
 </div>

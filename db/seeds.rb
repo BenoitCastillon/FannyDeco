@@ -5,20 +5,20 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }]
 #   Character.create(name: 'Luke', movie: movies.first)
-puts 'cleaning up database'
+# puts 'cleaning up database'
 
-Realisation.destroy_all
+# Realisation.destroy_all
 
-puts 'database is clean'
+# puts 'database is clean'
 
-puts'Creating realisations'
+# puts'Creating realisations'
 
-20.times do
-  Realisation.create(
-    name: Faker::Address.community,
-    category: Faker::Construction.material,
-    description: Faker::ChuckNorris.fact
-  )
-end
+# 20.times do
+#   Realisation.create(
+#     name: Faker::Address.community,
+#     category: Faker::Construction.material,
+#     description: Faker::ChuckNorris.fact
+#   )
+# end
 
-puts 'Database operational'
+# puts 'Database operational'
