@@ -1,21 +1,33 @@
 .cards {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 50px;
-}
-.card {
-  background-image: url('https://www.aufildescouleurs.com/49629-large_default/papier-peint-tropical-noir-vert-palm-jungle.jpg');
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 100px;
+  margin-bottom: 85px;
 }
 
-@media (max-width: 992px) {
+.intro {
+  margin-bottom: 65px;
+  margin-top: 20px;
+}
+
+@media (max-width: 1200px) {
   .cards {
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 0px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 792px) {
   .cards {
     grid-template-columns: 1fr;
+    margin-bottom: 20px;
   }
+  .intro {
+  margin-bottom: 25px;
+}
 }
 
+.container {
+  padding-top: 35px;
+  padding-bottom : 20px;
+}

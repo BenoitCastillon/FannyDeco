@@ -5,6 +5,8 @@
 <%= cl_image_tag photo.key, width: 100, height: 100, crop: :fill %>
 <% end %>
 
+<%= cl_image_tag @realisation.photos[1].key, width: 100, height: 100, crop: :fill %>
+
 <%= link_to 'Retour à la liste', realisations_path %>
 <%= link_to 'Modifier', edit_realisation_path(@realisation) %>
 <%= link_to 'Supprimer', realisation_path(@realisation), method: :delete, data: { confirm: 'Es-tu bien sure de toi ma puff?'} %>

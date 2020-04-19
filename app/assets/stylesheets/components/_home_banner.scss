@@ -9,7 +9,7 @@
 
 .banner-content {
   height: 50vh;
-  padding-top : 50px;
+  padding-top : 110px;
   // flex: 100%;
 }
 
@@ -25,23 +25,28 @@
     font-weight: 500;
   }
 
-// #0B6E8E
-// #2183A0
-// Yankees Blue : #242F40
 
-// DARK IMPERIAL BLUE : #08415C
-// Le Yellow : #FFE81E
-
-@media(max-width: 768px) {
-
-  // .banner-content {
-  //   padding-top: 30px;
-  // }
-
+@media(max-width: 1200px) {
+  .banner-content {
+    padding-top: 150px;
+  }
   .banner-content h1 {
-    font-size: 28px;
+    font-size: 36px;
   }
   .banner-content p {
-    font-size: 28px;
+    font-size: 36px;
+  }
+}
+
+
+@media(max-width: 792px) {
+  .banner-content {
+    padding-top: 60px;
+  }
+  .banner-content h1 {
+    font-size: 24px;
+  }
+  .banner-content p {
+    font-size: 24px;
   }
 }

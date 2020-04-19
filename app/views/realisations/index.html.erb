@@ -2,20 +2,20 @@
   <%= image_tag "greenlamp3.jpg", class: "bannerpicture" %>
 </div>
 
-
-<%= link_to 'Créer une nouvelle réalisation', new_realisation_path %>
-
 <div class="container d-flex justify-content-center">
-  <div class="intro text-center mb-5">
+  <div class="intro text-center">
     <p>Vous trouverez ci-dessous une sélection de projets <br>
-    sur lesquels j'ai eu plaisir de travailler</p>
+    sur lesquels j'ai eu le plaisir de travailler</p>
   </div>
 
-
-
-  <div class="cards text-center pb-5">
+  <div class="cards text-center">
     <% @realisations.each do |realisation| %>
-    <div class="card"><%= realisation.name %></div>
+    <div class="card" style="background-image: url('<%= cl_image_path 'jungle_w5pvzf', height: 300, width: 400, crop: :fill %>')">
+      <p><%= realisation.name %></p></div>
     <% end %>
   </div>
 </div>
+
+
+
+ <%= link_to 'Créer une nouvelle réalisation', new_realisation_path %>
