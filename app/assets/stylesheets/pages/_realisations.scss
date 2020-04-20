@@ -1,33 +1,72 @@
-.cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 100px;
-  margin-bottom: 85px;
-}
-
 .intro {
   margin-bottom: 65px;
   margin-top: 20px;
 }
 
-@media (max-width: 1200px) {
-  .cards {
-    grid-template-columns: 1fr 1fr;
-    margin-bottom: 0px;
+.cards-realisations {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 100px;
+  margin-bottom: 85px;
+    a:link {
+     text-decoration: none;
   }
 }
 
-@media (max-width: 792px) {
-  .cards {
-    grid-template-columns: 1fr;
-    margin-bottom: 20px;
-  }
-  .intro {
-  margin-bottom: 25px;
-}
+.card-realisation {
+  background-image: asset-url('jungle.jpg');
+  background-size: cover;
+  background-position : center;
+  height: 350px;
+  width: 450px;
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 22px;
+  color: white;
+  font-weight: bolder;
+  text-shadow: 0 0 10px rgba(0,0,0,0.2);
+  padding: 0px 15px;
 }
 
 .container {
   padding-top: 35px;
   padding-bottom : 20px;
 }
+
+#parent:hover .card-name {
+ // opacity: 1;
+ visibility: visible;
+}
+#parent .card-name {
+  // opacity: 0;
+  visibility: hidden;
+}
+
+// #cardid a:link {
+//   text-decoration: none;
+// }
+
+// <-- MEDIA QUERIES -->
+
+
+@media (max-width: 1200px) {
+  .cards-realisations {
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 792px) {
+  .cards-realisations {
+    grid-template-columns: 1fr;
+    margin-bottom: 20px;
+  }
+  .intro {
+  margin-bottom: 25px;
+  }
+}
+
+

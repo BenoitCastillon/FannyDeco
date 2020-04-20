@@ -8,14 +8,19 @@
     sur lesquels j'ai eu le plaisir de travailler</p>
   </div>
 
-  <div class="cards text-center">
+  <div class="cards-realisations text-center">
     <% @realisations.each do |realisation| %>
-    <div class="card" style="background-image: url('<%= cl_image_path 'jungle_w5pvzf', height: 300, width: 400, crop: :fill %>')">
-      <p><%= realisation.name %></p></div>
+      <%= link_to realisation_path(realisation) do %>
+      <div id="parent" class="card-realisation">
+      <div class= "card-name"><%= realisation.name %></div>
+    </div>
+    <% end %>
     <% end %>
   </div>
+
+
 </div>
 
-
-
  <%= link_to 'Créer une nouvelle réalisation', new_realisation_path %>
+
+
